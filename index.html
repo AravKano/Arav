@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arav | Creator</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #0a0b0f;
+      --card: #111318;
+      --accent: #00eaff;
+      --accent2: #9b4dff;
+      --text: #e8e8e8;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      overflow-x: hidden;
+    }
+
+    /* Typewriter Animation */
+    .hero h2 {
+      font-size: 64px;
+      line-height: 1.1;
+      background: linear-gradient(90deg, var(--accent), var(--accent2));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 3px solid var(--accent);
+      width: 0;
+      animation: typing 4s steps(30) infinite alternate, blink 0.75s step-end infinite;
+      margin-bottom: 20px;
+    }
+
+    @keyframes typing {
+      from { width: 0; }
+      to { width: 100%; }
+    }
+
+    @keyframes blink {
+      0%, 100% { border-color: transparent; }
+      50% { border-color: var(--accent); }
+    }
+
+    /* Header */
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      padding: 20px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      backdrop-filter: blur(10px);
+      background: rgba(255,255,255,0.02);
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+      z-index: 10;
+    }
+
+    header h1 {
+      background: linear-gradient(90deg, var(--accent), var(--accent2));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 30px;
+      font-weight: 700;
+    }
+
+    .social-link a {
+      padding: 10px 24px;
+      font-size: 17px;
+      text-decoration: none;
+      color: var(--accent);
+      border: 1px solid var(--accent);
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+
+    .social-link a:hover {
+      background: var(--accent);
+      color: black;
+    }
+
+    /* HERO */
+    .hero {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 60px;
+      max-width: 700px;
+    }
+
+    .hero p {
+      font-size: 22px;
+      opacity: 0.85;
+    }
+
+    /* Section Title */
+    .section-title {
+      font-size: 34px;
+      font-weight: 600;
+      padding-left: 60px;
+      margin-bottom: 20px;
+      background: linear-gradient(90deg, var(--accent), var(--accent2));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* Cards */
+    .cards {
+      padding: 40px 60px 120px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 35px;
+    }
+
+    .card {
+      background: var(--card);
+      padding: 35px;
+      border-radius: 18px;
+      border: 1px solid rgba(255,255,255,0.05);
+      transition: 0.35s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      border-color: var(--accent);
+      box-shadow: 0 0 25px rgba(0, 234, 255, 0.15);
+    }
+
+    .card h3 {
+      color: var(--accent);
+      font-size: 22px;
+      margin-bottom: 12px;
+    }
+
+    footer {
+      text-align:center;
+      padding: 50px;
+      opacity: 0.4;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Arav</h1>
+  </header>
+
+  <section class="hero">
+    <h2>Hi, I'm Arav 👋</h2>
+    <p>I love coding, cybersecurity, and building cool projects on the internet. Welcome to my page.</p>
+  </section>
+
+  <h2 class="section-title">What I Do</h2>
+  <section class="cards">
+    <div class="card">
+      <h3>📱 Interests</h3>
+      <p>I am really interested in cybersecurity. I want to learn every coding language and earn a respected tech role.</p>
+    </div>
+
+    <div class="card">
+      <h3>💻 Coding Projects</h3>
+      <p>I plan to learn C++, Java, and C# so I can create advanced tools, software, and creative designs.</p>
+    </div>
+
+    <div class="card">
+      <h3>🎨 Creative Designs</h3>
+      <p>I want to start with hand-drawn designs and work my way up to fully digital, professional-level UI/UX creations.</p>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Arav — All Rights Reserved
+  </footer>
+
+</body>
+</html>
